@@ -20,7 +20,7 @@ import { FilterPipe } from './pipes/filter.pipe'; // -> imported filter pipe
     HttpClientModule,
     
   ],
-
+  exports: [FilterPipe],
   providers: [],
 
   bootstrap: [AppComponent]

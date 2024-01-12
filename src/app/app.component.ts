@@ -2,6 +2,8 @@ import { Component , Input} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DataService } from './services/post.service';
 import { HttpClient, HttpClientModule, HttpHandler  } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+//import { FilterPipe } from './pipes/filter.pipe'; // -> imported filter pipe 
 
 interface Post {
   driver_id: number;
@@ -11,7 +13,7 @@ interface Post {
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, FormsModule],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
